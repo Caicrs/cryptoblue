@@ -39,3 +39,7 @@ export const listnft = connection.define(
         timestamps:false
     }
 )
+
+const initTable = async() => {
+    await listnft.sync()
+}
