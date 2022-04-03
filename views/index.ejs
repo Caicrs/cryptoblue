@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/C.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>ryptoBlue</title>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+
+    
+    <div class="container">
+        
+        <img class="ball1" src="img/ball.png">
+        <img class="ball2" src="img/ball.png">
+        <img class="ball3" src="img/ball.png">
+        <img class="ball4" src="img/ball.png">
+        <img class="ball5" src="img/ball.png">
+        <img class="ball6" src="img/ball.png">
+
+        <div class="shape-1">
+            <img class="title-homepage" src="img/title-homepage.png">
+        
+
+
+        </div>
+
+        <div class="card-container">
+            <img class="img-setup" src="https://lh3.googleusercontent.com/CQKbt0WzAnYSzXnQwtbaV4WirLC41qkjDTsVjIVQWC897gtZTyk94ox3Sg1JnDOvBpZOzAYQksWaQMMrNnv70phGm4gQEGv_9T-LVw=w600">
+                <div class="ponts">
+                    <div class="dots activedot"></div>
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                </div>
+            </img>
+        </div> 
+    </div>
+
+        
+    <div class="triangulo"></div>    
+
+    <div class="container-2">
+
+            <img class="ball1" alt="grande esfera com gradient roxa rosa e" src="img/ball.png">
+            <img class="ball7" src="img/ball.png">
+            <img class="ball3" src="img/ball.png">
+            <img class="ball4" src="img/ball.png">
+            <img class="ball5" src="img/ball.png">
+        
+            <div class="desc-session-2">
+                <div class="desc">All steps explained step by step to <br>facilitate your experience with us.</d>
+            </div>
+
+            <div class="cards-grid">
+
+                <div class="card-content ">
+                    <div class="img-box">
+                        <img class="img-setup-card" src="img/wallet-icon.png">
+                    </div>
+                    
+                    <div class="title-card-content">1. Set up Your Wallet</div>
+                    <div class="desc-card-content">Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet icon in the top right corner. Learn about the wallets we support.</div>
+                    
+                </div>
+
+                <div class="card-content midcard">
+                    <div class="img-box">
+                        <img class="img-setup-card" src="img/img-icon.png">
+                    </div>
+                    
+                    <div class="title-card-content">2. Add your NFTs</div>
+                    <div class="desc-card-content">Upload your work (image, video, audio, or 3D art), add a title and description, and customize your NFTs with properties, stats, and unlockable content.</div>
+                    
+                </div>
+
+                <div class="card-content ">
+                    <div class="img-box">
+                        <img class="img-setup-card" src="img/target-icon.png">
+                    </div>
+                    
+                    <div class="title-card-content">3. List them for sale</div>
+                    <div class="desc-card-content">Choose between auctions, fixed-price listings, and declining-price listings. You choose how you want to sell your NFTs, and we help you sell them!</div>
+                    
+                </div>       
+
+            </div>  
+
+        
+        </div>
+    </div> 
+
+  
+
+    <div class="container-2" id="list">
+
+        <img class="ball1" alt="grande esfera com gradient roxa rosa e" src="img/ball.png">
+        <img class="ball7" src="img/ball.png">
+        <img class="ball3" src="img/ball.png">
+        <img class="ball4" src="img/ball.png">
+        <img class="ball5" src="img/ball.png">
+    
+        <div class="desc-session-2">
+            <div class="desc storedesc">My List</div>
+            <a href="/addnewnft"> <div class="btn-newnft">Add New NFT</div></a>
+         
+        </div>
+
+        <div class="cards-grid-store">
+            <% nft_catalog.forEach(element => { %>
+                <a href="/details/<%= element.id %>">
+                    <div class="card-content-store " id="cardstore">
+                    <div class="intern-box-nft">
+                                <img class="img-setup-card-nft" src="<%= element.url_img %> ">
+                            
+                            <div class="title-id-box">
+                                <div class="title-card-nft"><%= element.nome %></div>
+                                <div class="desc-card-nft id">#<%= element.id %></div>
+                            </div>
+                            
+                            <div class="desc-card-nft">by <%= element.autor %></div>
+                            <div class="price-card-nft"><img src="img/eth.svg" class="img-eth"><%= element.price %></div>
+                            
+                        </div>
+                        <div class="showmore desc-card-nft ">Show more</div>
+
+                    </div>
+                </a>
+            <% }) %>
+
+                 
+
+        </div>  
+
+    
+    </div>
+</div> 
+
+    <div class="container-3">
+
+        <img class="ball8" src="img/ball.png">
+        <img class="ball2" src="img/ball.png">
+        <img class="ball3" src="img/ball.png">
+        <img class="ball4" src="img/ball.png">
+        <img class="ball5" src="img/ball.png">
+        <img class="ball6" src="img/ball.png">
+
+        <div class="bluetoken-box">
+           <div class="bluetoken-img">
+                <img class="bluetoken" src="img/BlueToken.png">
+           </div> 
+
+           <div class="bluetoken-textbox">
+                <div class="pontsvertical">
+                    <div class="dotsvert acdot"></div>
+                    <div class="dotsvert  "></div>
+                    <div class="dotsvert "></div>
+                </div>
+
+                <div class="text-bluetoken">
+                    The first token thought and developed for an edtech.
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="bluetoken-box">
+            <img class="tokenbg" src="img/tokenbg.png">
+        </div>
+
+    </div>
+
+    <div class="container-4">
+        <div class="text-waiting">Get on the waiting list to buy....</div>
+   
+        <div class="btn-join"><a href="/">Join the waiting list</a></div>
+        
+    
+    </div>
+
+    <div class="container-5">
+        <div class="text-contact">
+            But in the meantime, follow us on social media and have a weekly chat with our developers.
+        </div>
+
+  
+            
+            <div class="main-media-box">
+                
+                
+
+                <div class="img-social-tt"><a href="/">
+                    <img src="img/discord.png" class="icon-social" >   </a> 
+                </div>
+                <div class="text-tt" >Discord</div>
+
+
+                <div class="img-social-tt"><a href="/">
+                    <img src="img/insta.png" class="icon-social" style="width: 40px; height: 40px; margin-top: 9%;" >   </a> 
+                </div>
+                <div class="text-tt" >Instagram</div>
+                
+                <div class="img-social-tt"><a href="/">
+                    <img src="img/youtube.png" class="icon-social" >   </a> 
+                </div>
+                <div class="text-tt" >Youtube</div>
+                
+                <div class="img-social-tt"><a href="/">
+                    <img src="img/spotify.png" class="icon-social" >   </a> 
+                </div>
+                <div class="text-tt" >Spotify</div>
+                
+                <div class="img-social-tt"><a href="/">
+                    <img src="img/twitch.png" class="icon-social" >   </a> 
+                </div>
+                <div class="text-tt" >Twitch</div>
+                
+                <div class="img-social-tt"><a href="/">
+                    <img src="img/twitter.png" class="icon-social" >   </a> 
+                </div>
+                <div class="text-tt" >Twitter</div>
+
+                
+
+            
+                
+            </div>
+
+            
+       
+
+    </div>
+
+        
+
+</body>
+</html>

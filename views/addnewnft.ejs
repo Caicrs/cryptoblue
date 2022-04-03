@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/C.png" type="image/x-icon" />
+    <link rel="stylesheet" href="addnewnft.css">
+    <title>ryptoBlue</title>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    
+    <div class="container">
+        
+        <img class="ball1" src="img/ball.png">
+        <img class="ball2" src="img/ball.png">
+        <img class="ball3" src="img/ball.png">
+        <img class="ball4" src="img/ball.png">
+        <img class="ball5" src="img/ball.png">
+        
+       <div class="newnft-box">
+        <div class="box">
+            <div class="text-warning">
+                <div class="back-box">
+                   Create a new NFT
+                </div>
+             
+               
+            </div>
+        </div>
+        <div class="box right">
+              
+            <form action="/createnft" method="post">
+                <table>
+
+                    <fieldset>
+                    <ul>
+                        <label for="" name="nome">Nome</label>
+                        <input type="text" placeholder="Name" name="nome" >   
+                    </ul>
+                    </fieldset>
+
+                    <fieldset>
+                    <ul>
+                        <input type="text" placeholder="Autor" name="autor">
+                        <label for="" name="autor">Autor</label>
+                    </ul>
+                    </fieldset>
+
+                    <fieldset>
+                    <ul>
+                        <input type="text" placeholder="Description" name="description">
+                        <label for="" name="description">Nome</label>
+                    </ul>
+                    </fieldset>
+
+                    <fieldset>
+                    <ul>
+                        <input type="url" placeholder="Url Img" name="url_img">
+                        <label for="" name="url_img">Url Img</label>
+                    </ul>
+                    </fieldset>
+
+                    <fieldset>
+                    <ul>
+                        <input type="number" placeholder="ETH Price " name="price" inputmode="numeric">
+                        <label for="" name="price">Price</label>
+                    </ul>
+                    </fieldset>
+
+                    <fieldset>
+                    <ul><button type="submit">Send</button></ul>
+                    </fieldset>
+                
+
+                
+                </table>
+            </form>
+
+        </div>
+       </div>
+
+    </div>
+
+        
+
+</body>
+</html>

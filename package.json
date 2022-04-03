@@ -1,0 +1,28 @@
+{
+  "name": "cryptoblue",
+  "version": "1.0.0",
+  "description": "catalog project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caicrs/cryptoblue.git"
+  },
+  "author": "Caic Rocha Sales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caicrs/cryptoblue/issues"
+  },
+  "homepage": "https://github.com/Caicrs/cryptoblue#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0"
+  }
+}

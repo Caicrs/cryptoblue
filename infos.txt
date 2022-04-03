@@ -1,0 +1,16 @@
+rotas criadas ( routes / partials )
+controller
+database
+sequelize
+dotenv
+
+___
+DB_HOST = localhost
+DB_PASS = admin
+DB_USER = postgres
+DB_BASE = filmes 
+(variados = nome da tabela dele no postgre )
+___
+// arrumar o href da logo "CryptoBlue"
+// criar 
+// editar

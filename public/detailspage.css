@@ -1,0 +1,367 @@
+@import url('fonts/JosefinSans-Regular.ttf');
+@import url('fonts/JosefinSans-Light.ttf');
+
+@font-face {
+    font-family: "Josefin";
+    src: url('fonts/JosefinSans-Regular.ttf');
+    src: url('fonts/JosefinSans-Regular.ttf') format("ttf"),
+   
+}
+
+@font-face {
+        font-family: "Josefin-light";
+        src: url('fonts/JosefinSans-Thin.ttf');
+        src: url('fonts/JosefinSans-Thin.ttf') format("ttf"),
+       
+}
+
+    a{
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: transparent
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin', sans-serif;
+    
+overflow-x: hidden;
+    
+}
+body{
+    background-color: rgb(224, 224, 224);
+}
+img{
+    background-color: transparent;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: rgba(242, 8, 120, 1);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(242, 8, 120, 0.2);
+    border-radius: 10px;
+    
+  }
+
+/* ____________________________________________ NAVBAR ____________________________________________ */
+
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 2%;
+}
+
+.logo-box{
+
+    width: 50%;
+    height: 100%;
+}
+
+.logo-brand{
+    width: 100%;
+    padding: 0 0 2% 5%;
+    font-size: 34px;
+    font-weight: 500;
+    background: #F20878;
+    background: -webkit-linear-gradient(to right, #F20878 10%, #100BE4 25%);
+    background: -moz-linear-gradient(to right, #F20878 10%, #100BE4 25%);
+    background: linear-gradient(to right, #F20878 10%, #100BE4 25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-btn-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+.wallet-btn{
+    margin-left: 52%;
+    padding: 5px 5px 3px 5px;
+    font-size: 16px;
+    font-weight: 100;
+    
+}
+.wallet-btn > a {
+    color:rgba(242, 8, 120, 1);
+    transition: 0.3s;
+}
+.wallet{
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    justify-items: center;
+    cursor: pointer;
+    
+    transition: 0.3s;
+    color:rgba(242, 8, 120, 1);
+}
+.wallet-btn > a:hover{
+    color:rgba(242, 8, 120, 0.5);
+    color:rgba(242, 8, 120, 0.5);
+    transform: scale(0.95);
+}
+.sell{
+    color:rgba(242, 8, 120, 1);
+    margin-left: 5%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sell:hover{
+    color:rgba(242, 8, 120, 0.5);
+    transform: scale(0.95);
+}
+.main-btn-box{
+
+    width: 50%;
+    height: 100%;
+    justify-items: center;
+}
+
+/* ____________________________________________ BALLS ____________________________________________ */
+
+.ball1{
+    background-color: transparent;
+    display: inline;
+    position: absolute;
+    margin-left: 55%;
+    opacity: 0.2;
+    margin-top: 2%;
+    width: 35%;
+    animation: crescendo 3s alternate infinite ease-in-out;
+    transition: 0.3s;
+}
+.ball2{
+    background-color: transparent;
+    display: inline;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -5%;
+    width: 8%;
+    transition: 0.3s;
+    animation: crescendo 4s alternate infinite ease-in-out;
+    
+}
+.ball3{
+    background-color: transparent;
+    display: inline;
+    position: absolute;
+    margin-left:95%;
+    transition: 0.3s;
+    width: 8%;
+    animation: crescendo 7s alternate infinite ease-in-out;
+}
+.ball4{
+    background-color: transparent;
+    display: inline;
+    position: absolute;
+    margin-left:12%;
+    margin-top: 30%;
+    width: 4%;
+    animation: crescendo 4s alternate infinite ease-in-out;
+    transition: 0.3s;
+}
+.ball5{
+    background-color: transparent;
+    display: inline;
+    position: absolute;
+    margin-left:-9%;
+    margin-top: -12%;
+    width: 10%;
+    animation: crescendo 2s alternate infinite ease-in-out;
+    transition: 0.3s;
+    
+}
+
+@keyframes crescendo {
+    0%   {transform: scale(0.8) blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+    100% {transform: scale(1.2) ;
+            filter: blur(15px);
+            opacity: 0;
+    }
+
+
+  }
+
+
+/* ____________________________________________ SESSION - 1 ____________________________________________ */
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+.icon_arrow{
+    width: 40px;
+    margin-left: 1%;
+    text-decoration: none;
+}
+.shape-1{
+    width: 50%;
+    background-color: transparent;
+}
+.id-details{
+    width: 20%;
+    font-family: 'Josefin-Light';
+    text-align: start;
+    opacity: 0.5;
+    background-color: transparent;
+}
+.txt-details{
+    width: 450px;
+    background-color: transparent;
+}
+.buttons{
+    display: flex;
+    font-family: 'Josefin';
+    margin-left:30%;
+    margin-top: 10%;
+    text-align: end;
+    color: #F20878;
+    font-size: 22px;
+    
+    
+}
+a > .btnedit{
+    cursor: pointer;
+    color: #F20878;
+    background-color: transparent;
+    width: 50px;
+    font-family: 'Josefin';
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.btnedit:hover,.btndelete:hover{
+    transform: scale(0.9);
+    opacity: 1;
+}
+.btndelete{
+    cursor: pointer;
+    color: #F20878;
+    font-family: 'Josefin';
+    transition: 0.3s;
+    background-color: transparent;
+    width: fit-content;
+    margin-left: 70%;
+    opacity: 0.5;
+}
+.desc{
+    width: 550px;
+    
+    font-size: 18px;
+}
+.autor{
+    width: 550px;
+    height: 100%;
+    
+}
+.title-details{
+    display: flex;
+    
+    margin-left:30%;
+    margin-top: 10%;
+    text-align: end;
+    color: #F20878;
+    font-size: 28px;
+    border-bottom: 1px solid #F20878;
+}
+.btn-store > a {
+    color : rgba(242, 8, 120, 1);
+    font-size: 24px;
+}
+
+.btn-store{
+    width: 24%;
+    font-size: 24px;
+    margin: 4%;
+    cursor: pointer;
+    transition: 0.3s;
+    color : rgba(242, 8, 120, 1);
+    margin-top: 12%;
+    display: flex;
+    justify-content: left;
+}
+.btn-store:hover,.btn-join:hover{
+    opacity: 0.5;
+    transform: scale(0.9);
+
+    
+}
+
+
+a > .txt {
+    margin-top: 4%;
+    background-color: transparent;
+    font-weight: 100;
+}
+.title-homepage {
+    transition: 0.3s;
+width: 100%;
+margin: 2%;
+margin-top: 15%;
+background: transparent;
+transition: 0.3s;
+  }
+  .title-homepage:hover{
+      transform: rotate(1deg) scale(0.99);
+  }
+
+  .card-container{
+      width: 32%;
+      margin-left: 10%;
+      margin-top: 3%;
+     background-color: transparent;
+     
+  }
+  .img-setup{
+      width: 100%;
+      opacity: 1;
+      border-radius: 10%;
+
+      -webkit-box-shadow: 0px 4px 10px 5px rgba(255,255,255,0.1); 
+box-shadow: 0px 4px 10px 5px rgba(255,255,255,0.1);
+
+  }
+
+  .ponts{
+      width: 100%;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      margin-top: 3%;
+  }
+
+  .dots {
+    width: 10px;
+    height: 10px;
+    background: rgba(242, 8, 120, 0.25);
+    border-radius: 50%;
+    margin: 1%;
+  }
+  .activedot{
+    background: rgba(242, 8, 120, 1);
+  }
+
+  /* ____________________________________________ SESSION - 2 ____________________________________________ */

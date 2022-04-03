@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/C.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/detailspage.css">
+    <title>ryptoBlue</title>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    
+    <div class="container">
+        
+        <img class="ball1" src="/img/ball.png">
+        <img class="ball2" src="/img/ball.png">
+        <img class="ball3" src="/img/ball.png">
+        <img class="ball4" src="/img/ball.png">
+        <img class="ball5" src="/img/ball.png">
+
+        <div class="shape-1">
+            <table>
+                <ul class="title-details"><div class="id-details">#<%= nft.id %></div><div class="txt-details"><%= nft.nome %></div></ul>
+                <ul class="title-details"><div class="txt-details autor">by <%= nft.autor %></div></ul>
+                <ul class="title-details"><div class="txt-details desc"><%= nft.description%></div></ul>
+                <ul class="title-details"><div class="txt-details desc">ETH <%= nft.price%></div></ul>
+                <ul class="buttons">
+                    <a href="/editnft/<%= nft.id %>">
+                        <div class=" btnedit">Edit</div>
+                    </a>
+                    
+                   <a href="/delete/<%= nft.id %>">
+                       <div class="txt-details btndelete">Delete</div>
+                    </a> 
+                </ul>
+            </table>
+        </div>
+
+ 
+
+        <div class="card-container">
+          
+                <img class="img-setup" src="<%= nft.url_img %>">
+                   
+            
+        </div> 
+    </div>     
+
+</body>
+</html>
