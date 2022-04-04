@@ -6,7 +6,7 @@ __________________________________________________
 <h6>- Css</h6>
 <h6>- Javascript</h6>
 <h6>- SQL | PostgreSQL | Sequelize</h6>
-<h6>- NodeJS | Express | Nodemon</h6>
+<h6>- NodeJS | Express | Nodemon | EJS</h6>
 __________________________________________________
 <h4>Social Medias :</h4>
 <h6>- Linkedin : </h6>
