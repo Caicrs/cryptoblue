@@ -12,6 +12,5 @@ __________________________________________________
 <h6>- Linkedin : </h6>
 <h6>  https://www.linkedin.com/in/caic-rocha-2b910222a/
 <h6>- Email : </h6>
-<h6>  caicrochask8@gmail.com
-<h6>- Instagram : </h6>
-<h6>  https://www.instagram.com/caicrs/
+<h6>  caicrs.contact@gmail.com
+
